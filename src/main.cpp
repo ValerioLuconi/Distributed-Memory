@@ -51,7 +51,7 @@ DM mem;
  */
 void *thread (void *in)
 {
-	int sd = (int) in;
+	intptr_t sd = (intptr_t) in;
 	int ret, type, id, resp;
 	char req[2 * sizeof(int)];
 

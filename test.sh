@@ -7,7 +7,7 @@ sleep 0.1
 sleep 0.1
 cd ../test
 for i in 1 2 3; do
-	echo "Start ciclo $i"
+	echo "Start cycle $i"
 	./countspace dm.conf > file1 &
 	A=$!
 	./countword dm.conf > file2 &
@@ -22,7 +22,7 @@ for i in 1 2 3; do
 		echo "FAIL"
 		exit 1
 	fi
-	echo "End ciclo $i"
+	echo "End cycle $i"
 done
 
 echo "OK"
